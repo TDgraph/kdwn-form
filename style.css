@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+
+.container {
+    width: 70%;
+    margin: 40px auto;
+    background-color: black;
+    opacity: 0.5;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+form {
+    width: 40%;
+    margin: 0px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+h1 {
+    width: 50%;
+    margin: 0px auto;
+    padding-bottom: 20px;
+    font-family: monospace;
+    text-align: center;
+    animation-name: tide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: linear;
+}
+@keyframes tide {
+    20% {
+        opacity: 0;
+    }
+}
+
+label {
+    display: block;
+    color: rgb(244, 240, 248);
+}
+
+input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 100%;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 5px 5px rgb(133, 130, 130);
+    border-radius: 10px;
+    text-align: center;
+    transition: box-shadow 0.4s ease-in-out 0.0s;
+    color: black;
+    font-size: 20px;
+}
+
+input::placeholder {
+    font-size: 20px;
+    font-family: monospace;
+}
+
+input:hover {
+    box-shadow: 2px 2px 2px 2px rgb(250, 88, 177);
+}
+
+button {
+    margin-top: 30px;
+    width: 50%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    align-content: center;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: black;
+    box-shadow: 2px 2px 5px 5px rgb(133, 130, 130);
+    transition: background-color 0.5s ease-in-out 0.1s;
+}
+
+button:hover {
+    background-color: rgb(9, 12, 12);
+    color: #fff;
+    box-shadow: 2px 2px 5px 5px rgb(245, 124, 124);
+}
